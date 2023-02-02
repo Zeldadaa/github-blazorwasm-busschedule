@@ -1,0 +1,45 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ "master" ]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x        
+         
+   # 發佈程式到release資料夾
+      - name: Publish .NET Core Project to release folder
+        run: dotnet publish -c Release -o release --nologo
+      
+   # 修改 index.html 的 base href 設定
+      - name: change base href in index.html
+        run: sed -i 's/<base href="\/" \/>/<base href="\/github-blazorwasm-busschedule\/" \/>/g' release/wwwroot/index.html
+      
+   # 新增 .nojekyll 檔
+      - name: add .nojekyll file
+        run: touch release/wwwroot/.nojekyll
+
+   # 複製 index.html 成 404.html
+      - name: copy index.html replace 404.html
+        run: cp release/wwwroot/index.html release/wwwroot/404.html
+        
+   # 將release/wwwroot的程式碼，push到gh-pages分支
+      - name: Deploy 🚀 wwwroot to GitHub Pages(the gh-pages branch)
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: release/wwwroot
