@@ -1,0 +1,272 @@
+body {
+    width: 100%;
+    position: relative;
+}
+
+
+/*HEADING*/
+
+.css_heading {
+    text-align: center;
+}
+
+.css_heading-title {
+    font-weight: 900;
+}
+
+.css_heading-description {
+    color: #888888;
+    font-size: 25px;
+}
+
+
+
+/*SEARCHBAR*/
+.css_search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css_searchbar {
+    text-align: center;
+    width: 40%;
+    margin: 2rem 0 2rem 0;
+}
+
+.css_search-input {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.css_search-submit {
+    position: absolute;
+    font-size: 18px;
+}
+
+
+/*CARDS*/
+.css_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20rem);
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+    .css_cards > li {
+        height: 8rem;
+        position: relative;
+        border-radius: 10px;
+        list-style-type: none;
+        box-shadow: 0px 6px 10px rgba(0,0,0,0.25);
+        background-color: #76A6A4;
+    }
+
+
+
+.css_card-info {
+    position: absolute;
+    border-radius: 10px;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .css_card-info .title {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .css_card-info > p {
+        margin-top: 0.3rem;
+        font-size: 16px;
+        color: white;
+    }
+
+
+
+    .css_card-info > .buttons {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+        .css_card-info > .buttons > .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            letter-spacing: 20px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.1s;
+            padding: 10px 30px;
+            border-radius: 3px;
+        }
+
+
+
+            .css_card-info > .buttons > .button:hover {
+                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+                border-radius: 5px 5px 0 0;
+            }
+
+            .css_card-info > .buttons > .button:active {
+                transform-origin: bottom;
+                transform: scale(0.95);
+                box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.3);
+            }
+/*  .css_card-info > .buttons > .button:active {
+                -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+                -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+                box-shadow: inset 0px 0px 5px #c1c1c1;
+                outline: none;
+            }*/
+
+
+
+
+/*MESSAGE*/
+.css_msg {
+    font-size: 30px;
+    text-align: center;
+    color: #575756;
+}
+
+
+
+/*分割線*/
+.divider {
+    padding: 20px 0px 0px 0px;
+    border-left: 2px solid white;
+}
+
+
+/*BusInfo*/
+.info_popup {
+    width: 100%;
+    height: 100%;
+    /*position: absolute;*/
+    position: fixed;
+    top: 0;
+    /*left: 0;*/
+    background-color: hsla(128, 0%, 56%, 0.6);
+}
+
+
+/**/
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.site-header {
+    /*background-color: hsla(128, 0%, 56%, 0.6);*/
+    background-color: #91c9b0;
+}
+
+.site-header-inner {
+    height: 10%;
+}
+
+.site-main {
+    background-color: hsla(128, 0%, 56%, 0.6);
+}
+
+.site-main-inner {
+    background-color: #f1f1f1;
+    height: 400px;
+}
+
+.site-footer {
+    /*background-color: hsla(128, 0%, 56%, 0.6);*/
+    background-color: #9D9D9C;
+}
+
+.site-footer-inner {
+    height: 10%;
+}
+
+
+
+
+.div-stop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.div-stop-item {
+    text-align: center;
+    margin: 10px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.popup {
+    margin: 10% auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+    .popup h2 {
+        margin-top: 0;
+        color: #333;
+        font-family: Tahoma, Arial, sans-serif;
+    }
+
+    .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .popup .close:hover {
+            color: #06D85F;
+        }
+
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+    }
