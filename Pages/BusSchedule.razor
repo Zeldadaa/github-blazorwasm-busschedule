@@ -1,0 +1,128 @@
+﻿@page "/busschedule"
+
+@inject NavigationManager NaviMang
+
+<head>
+    <link href="./css/BusSchedule.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+
+        <div class="css_heading">
+            <h1 class="css_heading-title">臺北市公車路線資訊</h1>
+            <p class="css_heading-description"></p>
+        </div>
+    </header>
+
+
+
+
+    <div class="css_search">
+        <div class="css_searchbar">
+            <input class="css_search-input" @oninput="@((e) => { SearchCondition_RouteName=(string)e.Value;})"
+                type="text" placeholder="Search">
+        </div>
+    </div>
+
+
+
+
+    @if (Route_Data?.Count > 0)
+    {
+        if (string.IsNullOrEmpty(SearchCondition_RouteName))
+        {
+            <ul class="css_cards">
+                @foreach (var item in Route_Data)
+                {
+                    <li>
+                        <div class="css_card-info">
+                            <span class="title">@item.RouteName.Zh_tw</span>
+                            <p>@item.DepartureStopNameZh - @item.DestinationStopNameZh</p>
+
+                        </div>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            var searchresult = GetData_SearchByRoute(SearchCondition_RouteName, Route_Data);
+
+            if (searchresult.Count > 0)
+            {
+                <ul class="css_cards">
+                    @foreach (var searched in searchresult)
+                    {
+                        <li>
+                            <div class="css_card-info">
+                                <span class="title">@searched.RouteName.Zh_tw</span>
+                                <p>@searched.DepartureStopNameZh - @searched.DestinationStopNameZh</p>
+                            </div>
+                        </li>
+                    }
+                </ul>
+
+            }
+            else
+            {
+                <div class="css_msg">查無資料</div>
+
+            }
+
+        }
+    }
+
+
+
+ @if (_businfoClicked)
+    {
+
+        <div class="info_popup" id="myPopUp">
+            <div class="popup">
+                @if (string.Equals(CurrentRouteData.RouteName.Zh_tw, CurrentRouteData.RouteName.En))
+                {
+                    <h2>@CurrentRouteData.RouteName.Zh_tw</h2>
+                }
+                else
+                {
+                    <h2>@CurrentRouteData.RouteName.Zh_tw @CurrentRouteData.RouteName.En</h2>
+                }
+                <a class="close" @onclick="(()=>{_businfoClicked=false; })">&times;</a>
+                <div class="content">
+                    <div class="div-stop">
+                        <div class="div-stop-item">
+                            <h4>@CurrentRouteData.DepartureStopNameZh</h4>
+                            <h5>@CurrentRouteData.DepartureStopNameEn</h5>
+                        </div>
+                        <h3>——</h3>
+                        <div class="div-stop-item">
+                            <h4>@CurrentRouteData.DestinationStopNameZh</h4>
+                            <h5>@CurrentRouteData.DestinationStopNameEn</h5>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:10px;">
+                        <div>
+                            
+                            <h5>首班車:@CurrentRouteData.SubRoutes.First().FirstBusTime</h5>
+                            <h5>末班車:@CurrentRouteData.SubRoutes.First().LastBusTime</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    }
+
+
+</body>
+
+
+
+

@@ -1,0 +1,47 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = Wasm_BusSchedule
+build_property.RootNamespace = Wasm_BusSchedule
+build_property.ProjectDir = d:\ZeldaFolder\BlazorPractice\BlazorWebAssembly\Wasm_BusSchedule\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = d:\ZeldaFolder\BlazorPractice\BlazorWebAssembly\Wasm_BusSchedule
+build_property._RazorSourceGeneratorDebug = 
+
+[d:/ZeldaFolder/BlazorPractice/BlazorWebAssembly/Wasm_BusSchedule/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ZeldaFolder/BlazorPractice/BlazorWebAssembly/Wasm_BusSchedule/Pages/BusSchedule.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVzU2NoZWR1bGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ZeldaFolder/BlazorPractice/BlazorWebAssembly/Wasm_BusSchedule/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ZeldaFolder/BlazorPractice/BlazorWebAssembly/Wasm_BusSchedule/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ZeldaFolder/BlazorPractice/BlazorWebAssembly/Wasm_BusSchedule/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ZeldaFolder/BlazorPractice/BlazorWebAssembly/Wasm_BusSchedule/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jpajjfynt4
+
+[d:/ZeldaFolder/BlazorPractice/BlazorWebAssembly/Wasm_BusSchedule/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ajp57ncqe5

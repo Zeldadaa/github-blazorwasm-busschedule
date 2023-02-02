@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "01SFF8UUQm4JB0N4Z19hlcth5KuVxLQnP3g0rt1UO81gz+QtvvBH/BX+/4cBJoQKdxjsAQmC9Ng88a2Ha8/iTg==",
+  "dgSpecHash": "I/D1l+EBGZsxFPcFIuZIcHJkxR1fotACwA8XJzgo3qZKmAjS397XgZtxBrJ/ncK/vVa4K7rdOyrpc76/kzVQ3g==",
   "success": true,
   "projectFilePath": "D:\\ZeldaFolder\\BlazorPractice\\BlazorWebAssembly\\Wasm_BusSchedule\\Wasm_BusSchedule.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\zelda_wu\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\zelda_wu\\.nuget\\packages\\microsoft.jsinterop\\6.0.9\\microsoft.jsinterop.6.0.9.nupkg.sha512",
     "C:\\Users\\zelda_wu\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.9\\microsoft.jsinterop.webassembly.6.0.9.nupkg.sha512",
+    "C:\\Users\\zelda_wu\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\zelda_wu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\zelda_wu\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\zelda_wu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
