@@ -65,7 +65,7 @@
       "System.Xml.Linq.dll": "sha256-Fh20YlwiGmfNcaz0jMPXmAMgyEmcoyjYedfj0FRya0c=",
       "System.Xml.ReaderWriter.dll": "sha256-4tAUm5fZ\/ydQoehIA2SeBzWPG92XUuvHdq1eweJVexk=",
       "System.Xml.XDocument.dll": "sha256-VO21rC6IdmIM6JZhCF2Bt0D015bByZq06iWlvjPMbdQ=",
-      "Wasm_BusSchedule.dll": "sha256-+h8E4BiloD3Mgcbr3Jcrh5oTIG9vyQSBqcovZQgHuVc="
+      "Wasm_BusSchedule.dll": "sha256-vpTUPyuqVlxNmHcSsfZw0NNHZEdfzT5EVO\/TZrJ2b20="
     },
     "extensions": null,
     "lazyAssembly": null,
